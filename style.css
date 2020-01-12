@@ -1,0 +1,99 @@
+body {
+    background-image: url("img/Hero_squares.png");
+    background-color: #cccccc;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#cadastro{
+    margin-top: 4%;
+}
+
+.container{
+    max-width: 500px;
+    width: 100%;
+    background: #fff;
+    margin: 50px auto;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.125);
+    padding-left: 30px;
+    padding-right: 50px;
+    padding-top:30px;
+    padding-bottom: 30px;
+}
+
+.container .title{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #071D49;;
+    text-align: center;
+}
+
+.container .form{
+    width: 100%;
+}
+ 
+.container .form .inputfield{
+    margin-bottom: 8px;
+    align-items: center;
+    display: block;
+}
+
+.container .form .inputfield span{
+    color: red;
+}
+
+.container .form .inputfield label{
+    width: 200px;
+    color: #757575;
+    margin-right: 10px;
+    font-size: 14px;
+}
+  
+.container .form .inputfield .input{
+    width: 100%;
+    outline: none;
+    border: 1px solid #d5dbd9;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.container .form .inputfield .input:focus{
+    border: 1px solid rgb(35, 161, 184);
+}
+
+.container .form .inputfield p{
+    font-size: 14px;
+    color: #757575;
+}
+
+.container .form .inputfield .btn{
+    padding: 8px 10px;
+    font-size: 15px; 
+    border: 0px;
+    background:  #6AD1E3;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+}
+
+.container .form .inputfield .btn:hover{
+    background: rgb(35, 161, 184);
+} 
+
+
+@media (max-width:420px) {
+    .container .form .inputfield{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .container .form .inputfield label{
+        margin-bottom: 5px;
+    }
+    
+}

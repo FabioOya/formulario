@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <title>Cadastro</title>
+
+</head>
+<body>
+    <form name="cadastro" id ="cadastro" action="" onsubmit="return validateForm()", method ="POST">
+        <div class="container">
+            <div class="title">
+             Formulário de Cadastro
+            </div>
+            <div class="form">
+                <div class="inputfield">
+                    <label>Nome</label>
+                    <input type="text" class="input" name="name" id="name">
+                    <span class="span" id="nameid"></span>                   
+                </div>  
+                <div class="inputfield">
+                    <label>Sobrenome</label>
+                    <input type="text" class="input" name="lastName" id="lastName">
+                    <span class="span" id="lastNameid"></span>
+                </div>  
+                <div class="inputfield">
+                    <label>Email</label>
+                    <input type="email" class="input" name="email" id="email">
+                    <span class="span" id="emailid"></span>
+                </div> 
+                <div class="inputfield">
+                    <label>Senha</label>
+                    <input type="password" class="input" name="password" id="password">
+                    <span class="span" id="passwordid"></span>
+                </div>  
+                <div class="inputfield">
+                    <label>Confirme a senha</label>
+                    <input type="password" class="input" name="confirmPassword" id="confirmPassword">
+                    <span class="span" id="confirmPasswordid"></span>
+                </div>
+                <div class="inputfield">
+                    <label>Celular</label>
+                    <input type="text" class="input" name="cel" id="cel" 
+                    onkeypress="$(this).mask('(00) 00000-0000')">
+                    <span class="span" id="celid"></span>
+                </div> 
+                <div class="inputfield">
+                    <label>CPF</label>
+                    <input type="text" class="input" name="cpf" id="cpf"
+                    onkeypress="$(this).mask('000.000.000-00')">
+                    <span class="span" id="cpfid"></span>
+                </div> 
+                <div class="inputfield">
+                    <label>CEP</label>
+                    <input type="text" class="input" name="cep" id ="cep" 
+                    onkeypress="$(this).mask('000.00-000')">
+                    <span class="span" id="cepid"></span>
+                </div> 
+                <div class="inputfield">
+                    <input type="submit" value="Cadastrar" class="btn">
+                </div>
+            </div>
+        </div>
+    </form>      
+</body>
+</html>
+                 
+    
+    
